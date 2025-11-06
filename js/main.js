@@ -120,7 +120,32 @@
         dots: true,
         loop: true,
     });
+const testimonials = document.querySelectorAll(".testimonial");
+let activeIndex = 1; // mặc định ở giữa
 
+function updatePositions() {
+  testimonials.forEach((item, index) => {
+    item.classList.remove("left", "right", "active");
+  });
+
+  const total = testimonials.length;
+  const leftIndex = (activeIndex - 1 + total) % total;
+  const rightIndex = (activeIndex + 1) % total;
+
+  testimonials[leftIndex].classList.add("left");
+  testimonials[activeIndex].classList.add("active");
+  testimonials[rightIndex].classList.add("right");
+}
+
+// xử lý khi click vào testimonial
+testimonials.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    activeIndex = index;
+    updatePositions();
+  });
+});
+
+updatePositions();
     
 })(jQuery);
 

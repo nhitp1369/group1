@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ProMan - Personal Portfolio HTML Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <h1 class="text-primary fw-bold m-0">ProMan</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Trang chủ</a>
+        <a href="#about" class="nav-item nav-link">Về chúng tôi</a>
+        <a href="#skill" class="nav-item nav-link">Kỹ năng</a>
+        <a href="#service" class="nav-item nav-link">Dịch vụ</a>
+      </div>
+      <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+        <h1 class="text-primary fw-bold m-0">ProMan</h1>
+      </a>
+      <div class="navbar-nav me-auto py-0">
+        <a href="#project" class="nav-item nav-link">Dự án</a>
+        <a href="#team" class="nav-item nav-link">Nhóm chúng tôi</a>
+        <a href="#testimonial" class="nav-item nav-link">Đánh giá</a>
+        <a href="#contact" class="nav-item nav-link">Liên hệ</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+<!-- Header Start -->
+<div class="container-fluid bg-black text-light my-6 mt-0" id="home" style="font-family: 'Playfair Display', serif;">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+        <h3 class="text-warning mb-3">Welcome to</h3>
+        <h1 class="display-3 mb-3 fw-bold" style="letter-spacing: 2px;">Louis Vuitton</h1>
+        <h2 class="typed-text-output d-inline text-light"></h2>
+        <div class="typed-text d-none">Luxury Fashion, Timeless Craftsmanship, Iconic Design, French Elegance, Global Heritage</div>
+        <div class="d-flex align-items-center pt-5">
+          <a href="#collections" class="btn btn-warning text-black py-3 px-4 me-5 rounded-pill fw-bold">Explore Collection</a>
+          <button type="button" class="btn-play" data-bs-toggle="modal"
+            data-src="https://www.youtube.com/embed/mzmi9yM9ZyU" data-bs-target="#videoModal">
+            <span></span>
+          </button>
+          <h5 class="ms-4 mb-0 d-none d-sm-block text-light">Watch the Story</h5>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded shadow-lg" src="img/lv-header.jpg" alt="Louis Vuitton Collection">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header End -->
+
+  <!-- Video Modal Start -->
+  <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal End -->
+
+
+ <!-- About Start -->
+<div class="container-xxl py-6" id="about">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="d-flex align-items-center mb-5">
+          <div class="years flex-shrink-0 text-center me-4">
+            <h1 class="display-1 mb-0">170</h1>
+            <h5 class="mb-0">Years</h5>
+          </div>
+          <h3 class="lh-base mb-0">of timeless craftsmanship and luxury innovation</h3>
+        </div>
+        <p class="mb-4">
+          Since 1854, Louis Vuitton has defined the art of elegant travel through exceptional design and
+          unparalleled craftsmanship. Each creation reflects a legacy of innovation, quality, and French savoir-faire.
+        </p>
+        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Exquisite Craftsmanship</p>
+        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Timeless Design</p>
+        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Global Prestige</p>
+        <a class="btn btn-primary py-3 px-5 mt-3" href="">Discover More</a>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6">
+            <img class="img-fluid rounded" src="img/lv-about-1.jpg" alt="Louis Vuitton Workshop">
+          </div>
+          <div class="col-sm-6">
+            <img class="img-fluid rounded" src="img/lv-about-2.jpg" alt="Louis Vuitton Collection">
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <h5 class="border-end pe-3 me-3 mb-0">Boutiques Worldwide</h5>
+          <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">460</h2>
+        </div>
+        <p class="mb-4">
+          Louis Vuitton’s presence extends across the globe, offering clients an immersive experience in luxury
+          through over 460 boutiques in more than 60 countries.
+        </p>
+        <div class="d-flex align-items-center mb-3">
+          <h5 class="border-end pe-3 me-3 mb-0">Exclusive Collections</h5>
+          <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">900</h2>
+        </div>
+        <p class="mb-0">
+          From iconic trunks to haute couture fashion, Louis Vuitton continues to create collections that redefine
+          modern luxury while honoring its Parisian heritage.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+
+  <!-- Skills Start -->
+<div class="container-xxl py-6 pb-5" id="skill" style="background: linear-gradient(135deg, #2E2A28, #1C1C1C); color: #F5F5F5;">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+        <h2 class="display-5 mb-4" style="color: #D4AF37;">Kỹ năng & Năng lực của Louis Vuitton</h2>
+        <p class="mb-4">
+          Louis Vuitton (1821 – 1892) là bậc thầy chế tác thủ công người Pháp, người sáng lập thương hiệu mang tên ông – biểu tượng toàn cầu của sự sang trọng và tinh tế.
+        </p>
+
+        <!-- Skill item -->
+        <div class="mb-4">
+          <h6 style="color: #D4AF37;">Thủ công tinh xảo (Craftsmanship)</h6>
+          <div class="progress" style="height: 24px; background-color: rgba(255, 255, 255, 0.1);">
+            <div class="progress-bar" role="progressbar" style="width: 98%; background: linear-gradient(90deg, #D4AF37, #8B6F20); color:#1C1C1C;">98%</div>
+          </div>
+          <small class="text-muted">Thành thạo kỹ nghệ chế tác rương, vali, đồ da – đạt chuẩn hoàn hảo về độ bền, thẩm mỹ và tính ứng dụng.</small>
+        </div>
+
+        <div class="mb-4">
+          <h6 style="color: #D4AF37;">Sáng tạo & Đổi mới (Innovation)</h6>
+          <div class="progress" style="height: 24px; background-color: rgba(255, 255, 255, 0.1);">
+            <div class="progress-bar" role="progressbar" style="width: 95%; background: linear-gradient(90deg, #D4AF37, #8B6F20); color:#1C1C1C;">95%</div>
+          </div>
+          <small class="text-muted">Tiên phong thay đổi thiết kế rương từ nắp vòm sang nắp phẳng – mở đầu kỷ nguyên mới cho ngành vận chuyển và thời trang du lịch.</small>
+        </div>
+
+        <div class="mb-4">
+          <h6 style="color: #D4AF37;">Tư duy thương hiệu & bảo vệ sáng tạo</h6>
+          <div class="progress" style="height: 24px; background-color: rgba(255, 255, 255, 0.1);">
+            <div class="progress-bar" role="progressbar" style="width: 90%; background: linear-gradient(90deg, #D4AF37, #8B6F20); color:#1C1C1C;">90%</div>
+          </div>
+          <small class="text-muted">Sáng tạo họa tiết Damier và in thương hiệu “L. Vuitton déposée” để chống hàng giả, định hình giá trị độc quyền.</small>
+        </div>
+
+        <div class="mb-4">
+          <h6 style="color: #D4AF37;">Khả năng lãnh đạo & quản lý sản xuất</h6>
+          <div class="progress" style="height: 24px; background-color: rgba(255, 255, 255, 0.1);">
+            <div class="progress-bar" role="progressbar" style="width: 85%; background: linear-gradient(90deg, #D4AF37, #8B6F20); color:#1C1C1C;">85%</div>
+          </div>
+          <small class="text-muted">Từ xưởng nhỏ tại Paris, ông phát triển thành cơ sở lớn ở Asnières-sur-Seine – biểu tượng cho kỹ nghệ và quản trị sản xuất thủ công Pháp.</small>
+        </div>
+      </div>
+
+      <!-- Education & Experience -->
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+        <h3 class="mb-4" style="color: #D4AF37;">Hành trình nghề nghiệp</h3>
+
+        <div class="border-start border-3 ps-4 mb-4" style="border-color: #D4AF37 !important;">
+          <h5>1837 – Thợ đóng rương tại Paris</h5>
+          <p class="mb-1 text-muted">Bắt đầu học nghề tại xưởng của Maréchal, Paris.</p>
+          <p>Phát triển kỹ năng chế tác rương và đóng gói cho giới quý tộc.</p>
+        </div>
+
+        <div class="border-start border-3 ps-4 mb-4" style="border-color: #D4AF37 !important;">
+          <h5>1853 – Thợ riêng của Hoàng hậu Eugénie</h5>
+          <p class="mb-1 text-muted">Được chọn làm thợ đóng rương cho Hoàng hậu – vợ Napoleon III.</p>
+          <p>Khẳng định tay nghề ở tầng lớp thượng lưu Pháp.</p>
+        </div>
+
+        <div class="border-start border-3 ps-4 mb-4" style="border-color: #D4AF37 !important;">
+          <h5>1854 – Thành lập thương hiệu Louis Vuitton</h5>
+          <p class="mb-1 text-muted">Mở xưởng đầu tiên tại Paris.</p>
+          <p>Khởi đầu thương hiệu toàn cầu, biểu tượng của sự tinh tế và thủ công đỉnh cao.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Service Start -->
+<div class="container-fluid my-5 py-6" id="service" style="background: linear-gradient(135deg, #3E2723, #1C1C1C); color:#F5F5F5;">
+  <div class="container">
+    <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-6">
+        <h2 class="display-5 mb-0" style="color: #D4AF37;">Dịch vụ & Giá trị của Louis Vuitton</h2>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <a class="btn btn-primary py-3 px-5" href="#" style="background-color:#D4AF37; border:none; color:#1C1C1C;">Khám phá thương hiệu</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" 
+             style="background-color:#2E2A28; border:1px solid #D4AF37;">
+          <div class="bg-icon flex-shrink-0 mb-3">
+            <img src="img/Ruong-LV.jpg.webp" alt="Chế tác rương cao cấp" 
+                 class="img-fluid rounded" 
+                 style="width: 80px; height: 80px; border:2px solid #D4AF37;">
+          </div>
+          <div class="ms-sm-4">
+            <h4 class="mb-3" style="color:#D4AF37;">Chế tác rương & vali thủ công</h4>
+            <span>Mỗi sản phẩm được làm thủ công tỉ mỉ, kết hợp giữa nghệ thuật truyền thống và tính ứng dụng cao – biểu tượng của tinh thần du lịch xa xỉ thế kỷ XIX.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" 
+             style="background-color:#2E2A28; border:1px solid #D4AF37;">
+          <div class="bg-icon flex-shrink-0 mb-3">
+            <img src="img/thietkedoimoi.jpg" alt="Thiết kế sáng tạo Louis Vuitton" 
+                 class="img-fluid rounded" 
+                 style="width: 80px; height: 80px; border:2px solid #D4AF37;">
+          </div>
+          <div class="ms-sm-4">
+            <h4 class="mb-3" style="color:#D4AF37;">Thiết kế sáng tạo & cải tiến</h4>
+            <span>Đổi mới kiểu dáng, cấu trúc và vật liệu: từ rương nắp phẳng, vải canvas chống nước đến họa tiết Damier – tất cả thể hiện tư duy tiên phong và tinh thần sáng tạo.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" 
+             style="background-color:#2E2A28; border:1px solid #D4AF37;">
+          <div class="bg-icon flex-shrink-0 mb-3">
+            <img src="img/motconvit.jpg" alt="Chiến lược thương hiệu" 
+                 class="img-fluid rounded" 
+                 style="width: 80px; height: 80px; border:2px solid #D4AF37;">
+          </div>
+          <div class="ms-sm-4">
+            <h4 class="mb-3" style="color:#D4AF37;">Chiến lược thương hiệu & bảo vệ sáng tạo</h4>
+            <span>Áp dụng chiến lược “marque déposée” – đăng ký thương hiệu độc quyền và tạo pattern đặc trưng để chống sao chép, khẳng định bản sắc thương hiệu.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" 
+             style="background-color:#2E2A28; border:1px solid #D4AF37;">
+          <div class="bg-icon flex-shrink-0 mb-3">
+            <img src="img/memaybeo.jpg.jpg" alt="Di sản thủ công Louis Vuitton" 
+                 class="img-fluid rounded" 
+                 style="width: 80px; height: 80px; border:2px solid #D4AF37;">
+          </div>
+          <div class="ms-sm-4">
+            <h4 class="mb-3" style="color:#D4AF37;">Bảo tồn di sản & phát triển bền vững</h4>
+            <span>Xưởng Asnières vẫn hoạt động đến ngày nay – nơi truyền lại tinh hoa chế tác thủ công và triết lý “chất lượng vượt thời gian”.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Service End -->
+
+ <!-- Projects Start -->
+<div class="container-xxl py-6 pt-5" id="project"
+     style="background: linear-gradient(135deg, #2E2A28, #1C1C1C); color:#F5F5F5;">
+  <div class="container">
+    <!-- Header -->
+    <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-6">
+        <h1 class="display-5 mb-0" style="color:#D4AF37;">Dự án nổi bật của Louis Vuitton</h1>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <ul class="list-inline mx-n3 mb-0" id="portfolio-flters" style="color:#D4AF37;">
+          <li class="mx-3 active" data-filter="*" style="cursor:pointer;">Tất cả dự án</li>
+          <li class="mx-3" data-filter=".first" style="cursor:pointer;">Thiết kế sản phẩm</li>
+          <li class="mx-3" data-filter=".second" style="cursor:pointer;">Di sản & Triển lãm</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="row g-4 wow fadeInUp" data-wow-delay="0.1s">
+
+      <!-- Project 1 -->
+      <div class="col-lg-4 col-md-6 portfolio-item first">
+        <div class="portfolio-img rounded overflow-hidden position-relative"
+             style="border:2px solid #D4AF37;">
+          <img class="img-fluid w-100 h-100 object-fit-cover" src="img/project-1.jpg" alt="Rương cổ điển LV">
+          <div class="portfolio-btn d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+               style="opacity:0; transition:0.4s; background:rgba(0,0,0,0.6);">
+            <a class="btn btn-lg-square border-0 mx-1" href="img/project-1.jpg" data-lightbox="portfolio"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a class="btn btn-lg-square border-0 mx-1" href="#"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-4 col-md-6 portfolio-item second">
+        <div class="portfolio-img rounded overflow-hidden position-relative"
+             style="border:2px solid #D4AF37;">
+          <img class="img-fluid w-100 h-100 object-fit-cover" src="img/heritage.jpg" alt="Triển lãm LV Heritage">
+          <div class="portfolio-btn d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+               style="opacity:0; transition:0.4s; background:rgba(0,0,0,0.6);">
+            <a class="btn btn-lg-square border-0 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a class="btn btn-lg-square border-0 mx-1" href="#"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-4 col-md-6 portfolio-item first">
+        <div class="portfolio-img rounded overflow-hidden position-relative"
+             style="border:2px solid #D4AF37;">
+          <img class="img-fluid w-100 h-100 object-fit-cover" src="img/ruongnapphang.webp" alt="Rương nắp phẳng 1858">
+          <div class="portfolio-btn d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+               style="opacity:0; transition:0.4s; background:rgba(0,0,0,0.6);">
+            <a class="btn btn-lg-square border-0 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a class="btn btn-lg-square border-0 mx-1" href="#"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-4 col-md-6 portfolio-item second">
+        <div class="portfolio-img rounded overflow-hidden position-relative"
+             style="border:2px solid #D4AF37;">
+          <img class="img-fluid w-100 h-100 object-fit-cover" src="img/xuongngu.jpg" alt="Xưởng Asnières LV">
+          <div class="portfolio-btn d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+               style="opacity:0; transition:0.4s; background:rgba(0,0,0,0.6);">
+            <a class="btn btn-lg-square border-0 mx-1" href="img/project-4.jpg" data-lightbox="portfolio"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-eye"></i>
+            </a>
+            <a class="btn btn-lg-square border-0 mx-1" href="#"
+               style="background-color:#D4AF37; color:#1C1C1C;">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Projects End -->
+
+<!-- CSS hover effect -->
+<style>
+  .portfolio-img {
+    height: 300px; /* Giữ chiều cao đồng nhất */
+  }
+
+  .portfolio-img img {
+    object-fit: cover;
+  }
+
+  .portfolio-img:hover .portfolio-btn {
+    opacity: 1 !important;
+  }
+</style>
+
+
+
+
+   <!-- Team Start -->
+<div class="container-xxl py-6 pb-5" id="team" style="background: linear-gradient(135deg, #2E2A28, #1C1C1C); color:#F5F5F5;">
+  <div class="container">
+    <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-6">
+        <h1 class="display-5 mb-0" style="color:#D4AF37;">Đội ngũ lãnh đạo Louis Vuitton</h1>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <a class="btn py-3 px-5" href="#" style="background-color:#D4AF37; border:none; color:#1C1C1C;">Liên hệ</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Team 1 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item position-relative rounded overflow-hidden" style="border:2px solid #D4AF37;">
+          <img class="img-fluid rounded" src="img/imagesbeccari.webp" alt="">
+          <div class="team-text p-4" style="background-color:#2E2A28;">
+            <div>
+              <h5 style="color:#D4AF37;">Pietro Beccari</h5>
+              <span>Chủ tịch & Giám đốc điều hành Louis Vuitton</span>
+            </div>
+            <i class="fa fa-arrow-right fa-2x" style="color:#D4AF37;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team 2 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="team-item position-relative rounded overflow-hidden" style="border:2px solid #D4AF37;">
+          <img class="img-fluid rounded" src="img/loiuis.jpg" alt="">
+          <div class="team-text p-4" style="background-color:#2E2A28;">
+            <div>
+              <h5 style="color:#D4AF37;">Nicolas Ghesquière</h5>
+              <span>Giám đốc Nghệ thuật Bộ sưu tập Nữ</span>
+            </div>
+            <i class="fa fa-arrow-right fa-2x" style="color:#D4AF37;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team 3 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="team-item position-relative rounded overflow-hidden" style="border:2px solid #D4AF37;">
+          <img class="img-fluid rounded" src="img/Pharrell_Williams_2024_(54133384149).jpg" alt="">
+          <div class="team-text p-4" style="background-color:#2E2A28;">
+            <div>
+              <h5 style="color:#D4AF37;">Pharrell Williams</h5>
+              <span>Giám đốc Nghệ thuật Bộ sưu tập Nam</span>
+            </div>
+            <i class="fa fa-arrow-right fa-2x" style="color:#D4AF37;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team End -->
+
+
+
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5 my-5" id="testimonial" style="background: linear-gradient(135deg, #3E2723, #1C1C1C); color:#F5F5F5;">
+  <div class="container py-5">
+    <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s" style="color:#D4AF37;">Đánh giá & Cảm nhận</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="testimonial-left h-100">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item text-center">
+            <div class="position-relative mb-5">
+              <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+              <div class="testimonial-icon">
+                <i class="fa fa-quote-left" style="color:#D4AF37;"></i>
+              </div>
+            </div>
+            <p class="fs-5 fst-italic">Louis Vuitton là biểu tượng của sự kết hợp giữa tinh hoa thủ công và sáng tạo không ngừng.</p>
+            <hr class="w-25 mx-auto" style="border-color:#D4AF37;">
+            <h5 style="color:#D4AF37;">Marie Dupont</h5>
+            <span>Nhà tư vấn thời trang</span>
+          </div>
+
+          <div class="testimonial-item text-center">
+            <div class="position-relative mb-5">
+              <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+              <div class="testimonial-icon">
+                <i class="fa fa-quote-left" style="color:#D4AF37;"></i>
+              </div>
+            </div>
+            <p class="fs-5 fst-italic">Tinh thần sáng tạo của Louis Vuitton là nguồn cảm hứng cho cả ngành thời trang hiện đại.</p>
+            <hr class="w-25 mx-auto" style="border-color:#D4AF37;">
+            <h5 style="color:#D4AF37;">Kenji Yamamoto</h5>
+            <span>Giám đốc sáng tạo</span>
+          </div>
+
+          <div class="testimonial-item text-center">
+            <div class="position-relative mb-5">
+              <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
+              <div class="testimonial-icon">
+                <i class="fa fa-quote-left" style="color:#D4AF37;"></i>
+              </div>
+            </div>
+            <p class="fs-5 fst-italic">Thương hiệu LV luôn duy trì di sản và đổi mới qua từng thế hệ.</p>
+            <hr class="w-25 mx-auto" style="border-color:#D4AF37;">
+            <h5 style="color:#D4AF37;">Sophie Laurent</h5>
+            <span>Chuyên gia thương hiệu cao cấp</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="testimonial-right h-100">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
+          <img class="img-fluid wow fadeIn mb-3 rounded" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+
+  <!-- Contact Start -->
+  <div class="container-xxl pb-5" id="contact">
+    <div class="container py-5">
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-0">Let's Work Together</h1>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+        </div>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="mb-2">My office:</p>
+          <h3 class="fw-bold">123 Street, New York, USA</h3>
+          <hr class="w-100">
+          <p class="mb-2">Call me:</p>
+          <h3 class="fw-bold">+012 345 6789</h3>
+          <hr class="w-100">
+          <p class="mb-2">Mail me:</p>
+          <h3 class="fw-bold">info@example.com</h3>
+          <hr class="w-100">
+          <p class="mb-2">Follow me:</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
+            with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
+            done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  <label for="name">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <label for="email">Your Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a message here" id="message"
+                    style="height: 100px"></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact End -->
+
+
+  <!-- Map Start -->
+  <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl pt-5 px-0">
+      <div class="bg-dark">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+          frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Map End -->
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
+          <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+index1.html
+Displaying index1.html.

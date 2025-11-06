@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         padding: 10px 0;
     }
 }
@@ -334,305 +334,466 @@
 
 
 /*** Testimonial ***/
-.testimonial-left,
-.testimonial-right {
+.testimonials {
     position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at center, #ffffff 40%, #f0f3f9 100%);
+    overflow: hidden;
 }
 
-.testimonial-left img,
-.testimonial-right img {
-    position: absolute;
-    padding: 5px;
-    border: 1px solid var(--secondary);
-    border-radius: 70px;
-}
-
-.testimonial-left img:nth-child(1),
-.testimonial-right img:nth-child(3) {
-    width: 70px;
-    height: 70px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.testimonial-left img:nth-child(2),
-.testimonial-right img:nth-child(2) {
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-}
-
-.testimonial-left img:nth-child(3),
-.testimonial-right img:nth-child(1) {
-    width: 50px;
-    height: 50px;
-    bottom: 10%;
-    right: 10%;
-}
-
-.testimonial-carousel .owl-item img {
-    width: 120px;
-    height: 120px;
-}
-
-.testimonial-carousel .testimonial-icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
-    border: 1px solid var(--secondary);
-    border-radius: 60px;
-}
-
-.testimonial-carousel .owl-dots {
-    height: 40px;
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #111;
     position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 2px solid var(--secondary);
-    border-radius: 30px;
-    transition: .5s;
+    z-index: 2;
 }
 
-.testimonial-carousel .owl-dot::after {
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.testimonial {
     position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 5px;
-    left: 5px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
     border-radius: 16px;
-    background: var(--secondary);
-    transition: .5s;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 35px 25px;
+    text-align: center;
+    transition: all 0.8s ease;
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(0.85);
+    z-index: 1;
+}
+
+.testimonial.active {
+    transform: translateX(0) scale(1.1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.testimonial.left {
+    transform: translateX(-360px) scale(0.9);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.testimonial.right {
+    transform: translateX(360px) scale(0.9);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.testimonial img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 3px solid #007bff;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+.testimonial p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.testimonial h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: #666;
+}
+
+.stars {
+    color: #ffb400;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
 /* ==== Custom Skills Section ==== */
 #skill .progress {
-  height: 22px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #e9ecef;
+    height: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e9ecef;
 }
 
 #skill .progress-bar {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 22px;
-  transition: width 1s ease-in-out;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: width 1s ease-in-out;
 }
 
 /* ==== Thanh kỹ năng nổi bật: HTML & CSS ==== */
 .highlight-skill {
-  background-color: #f8f9fa;
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  padding: 15px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transform: scale(1.05);
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transform: scale(1.05);
 }
 
 .highlight-skill .big-progress {
-  height: 30px;
-  border-radius: 15px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 .highlight-skill .big-progress .progress-bar {
-  font-size: 14px;
-  line-height: 30px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .highlight-skill small {
-  display: block;
-  margin-top: 8px;
-  font-size: 15px;
-  color: #333;
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #333;
 }
 
 /* Hiệu ứng khi rê chuột vào (tùy chọn) */
 .highlight-skill:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.25);
-  transition: 0.3s ease;
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.25);
+    transition: 0.3s ease;
 }
+
 /* ==== Service Section Custom ==== */
 #service .service-item {
-  transition: all 0.3s ease;
-  border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
 }
 
 #service .service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
-  border-color: #007bff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+    border-color: #007bff;
 }
 
 #service .service-item img {
-  border-radius: 8px;
+    border-radius: 8px;
 }
 
 #service h4 {
-  font-weight: 600;
-  color: #212529;
+    font-weight: 600;
+    color: #212529;
 }
 
 #service span {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.6;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 body {
-  background-color: #1C1C1C;
-  color: #F5F5F5;
+    background-color: #1C1C1C;
+    color: #F5F5F5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #D4AF37;
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #D4AF37;
+    font-weight: 600;
 }
 
-a, .text-primary {
-  color: #D4AF37 !important;
+a,
+.text-primary {
+    color: #D4AF37 !important;
 }
 
 a:hover {
-  color: #F5C542 !important;
+    color: #F5C542 !important;
 }
 
 /* ===== Skills Section ===== */
 #skill {
-  background: linear-gradient(135deg, #2E2A28, #1C1C1C);
-  color: #F5F5F5;
-  padding: 80px 0;
+    background: linear-gradient(135deg, #2E2A28, #1C1C1C);
+    color: #F5F5F5;
+    padding: 80px 0;
 }
 
 #skill h2 {
-  color: #D4AF37;
-  border-left: 5px solid #D4AF37;
-  padding-left: 10px;
+    color: #D4AF37;
+    border-left: 5px solid #D4AF37;
+    padding-left: 10px;
 }
 
 #skill .progress {
-  height: 24px; /* tăng chiều cao thanh */
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 8px;
+    height: 24px;
+    /* tăng chiều cao thanh */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
 }
 
 #skill .progress-bar {
-  background: linear-gradient(90deg, #D4AF37, #8B6F20);
-  font-weight: 600;
-  color: #1C1C1C;
-  font-size: 14px;
-  transition: width 1s ease-in-out;
+    background: linear-gradient(90deg, #D4AF37, #8B6F20);
+    font-weight: 600;
+    color: #1C1C1C;
+    font-size: 14px;
+    transition: width 1s ease-in-out;
 }
 
 #skill h6 {
-  color: #D4AF37;
-  margin-bottom: 8px;
+    color: #D4AF37;
+    margin-bottom: 8px;
 }
 
 #skill small {
-  color: #c5c5c5;
+    color: #c5c5c5;
 }
 
 /* Timeline - Education & Experience */
 #skill .border-start {
-  border-left: 4px solid #D4AF37 !important;
+    border-left: 4px solid #D4AF37 !important;
 }
 
 #skill .border-start h5 {
-  color: #F5F5F5;
+    color: #F5F5F5;
 }
 
 /* ===== Service Section ===== */
 #service {
-  background: linear-gradient(135deg, #3E2723, #1C1C1C);
-  color: #F5F5F5;
+    background: linear-gradient(135deg, #3E2723, #1C1C1C);
+    color: #F5F5F5;
 }
 
-#service h2, 
+#service h2,
 #service h4 {
-  color: #D4AF37;
+    color: #D4AF37;
 }
 
 #service .btn-primary {
-  background-color: #D4AF37;
-  border: none;
-  color: #1C1C1C;
-  font-weight: 600;
-  transition: all 0.3s ease;
+    background-color: #D4AF37;
+    border: none;
+    color: #1C1C1C;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 #service .btn-primary:hover {
-  background-color: #B8860B;
-  color: #fff;
+    background-color: #B8860B;
+    color: #fff;
 }
 
 /* Service Items */
 #service .service-item {
-  background-color: #2E2A28;
-  border: 1px solid #D4AF37;
-  transition: all 0.3s ease;
+    background-color: #2E2A28;
+    border: 1px solid #D4AF37;
+    transition: all 0.3s ease;
 }
 
 #service .service-item:hover {
-  transform: translateY(-5px);
-  background-color: #3E2723;
-  box-shadow: 0 0 15px rgba(172, 144, 53, 0.4);
+    transform: translateY(-5px);
+    background-color: #3E2723;
+    box-shadow: 0 0 15px rgba(172, 144, 53, 0.4);
 }
 
 #service .service-item h4 {
-  color: #D4AF37;
+    color: #D4AF37;
 }
 
 #service .service-item span {
-  color: #E0E0E0;
-  font-size: 15px;
+    color: #E0E0E0;
+    font-size: 15px;
 }
 
 #service .service-item img {
-  border: 2px solid #D4AF37;
-  border-radius: 8px;
-  background-color: #1C1C1C;
+    border: 2px solid #D4AF37;
+    border-radius: 8px;
+    background-color: #1C1C1C;
 }
 
 /* Section Buttons, Highlights */
 .btn-outline-light {
-  border-color: #D4AF37;
-  color: #D4AF37;
+    border-color: #D4AF37;
+    color: #D4AF37;
 }
 
 .btn-outline-light:hover {
-  background-color: #D4AF37;
-  color: #1C1C1C;
+    background-color: #D4AF37;
+    color: #1C1C1C;
 }
 
 /* Animation Accent */
 .wow {
-  animation-duration: 1s;
+    animation-duration: 1s;
 }
 
+#contact {
+    background: linear-gradient(135deg, #1C1C1C, #2E2A28);
+    color: #F5F5F5;
+    padding: 80px 0;
+}
+
+/* Card và form */
+.contact-card {
+    background: #2E2A28;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.form-control {
+    background-color: #1C1C1C;
+    border: 1px solid #4A4A4A;
+    color: #F5F5F5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    background-color: #262626;
+    border-color: #D4AF37;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+/* Label form-floating */
+.form-floating label {
+    color: #bfbfbf;
+}
+
+/* Nút gửi tin nhắn */
+.btn-gradient {
+    background: linear-gradient(135deg, #D4AF37, #B8860B);
+    border: none;
+    color: #1C1C1C !important;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #FFD700, #C5A100);
+    color: #000 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Nút Xin chào */
+.btn-rounded {
+    background: transparent;
+    border: 2px solid #D4AF37;
+    color: #D4AF37 !important;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-rounded:hover {
+    background: #D4AF37;
+    color: #1C1C1C !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Icon mạng xã hội */
+.social-links a {
+    background: #2E2A28;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #D4AF37;
+    color: #1C1C1C;
+    transform: translateY(-3px);
+}
+
+/* Giảm khoảng trống cuối */
+#contact .container {
+    padding-bottom: 40px;
+}
+
+#contact p.lead,
+#contact .section-subtitle,
+#contact>.container>.row:first-child p {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* ==== Ghi đè mạnh kích thước nút mạng xã hội ==== */
+#contact .btn-square {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 12px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4AF37 !important;
+    color: #1C1C1C !important;
+    font-size: 22px !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#contact .btn-square:hover {
+    background-color: #F5C542 !important;
+    color: #000 !important;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 0 12px rgba(245, 197, 66, 0.6);
+}
+
+div#contact div.d-flex.pt-2 a.btn.btn-square.btn-primary {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #D4AF37 !important;
+    color: #1C1C1C !important;
+    font-size: 26px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4) !important;
+    padding: 0 !important;
+}
+
+div#contact div.d-flex.pt-2 a.btn.btn-square.btn-primary:hover {
+    background-color: #F5C542 !important;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 0 15px rgba(245, 197, 66, 0.7);
+}
